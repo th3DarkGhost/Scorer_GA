@@ -1,5 +1,6 @@
 {
   "name": "scorer-board",
+  "author": "Stewar Marin Bedoya",
   "version": "0.1.0",
   "main": "public/electron.js",
   "private": true,
@@ -7,6 +8,7 @@
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^12.1.4",
     "@testing-library/user-event": "^13.5.0",
+    "bulma": "^0.9.3",
     "cross-env": "^7.0.3",
     "electron-is-dev": "^1.2.0",
     "react": "^18.0.0",

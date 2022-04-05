@@ -1,25 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { ColumnStat } from './Components/ColumnStat/ColumnStat';
 
-function App() {
+export const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div className='is-flex is-flex-direction-column is-align-items-center is-justify-content-center '>
+        <h1 style={{ fontSize: '5rem' }}>10:00 | 24</h1>
+        <h3 style={{ fontSize: '3.5rem' }}>Qtr - 1</h3>
+      </div>
+      <div className='columns'>
+        <div className='column'>{<ColumnStat />}</div>
+        <div className='column'>{<ColumnStat />}</div>
+      </div>
     </div>
   );
-}
-
-export default App;
+};
